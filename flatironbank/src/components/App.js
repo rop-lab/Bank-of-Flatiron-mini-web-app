@@ -24,7 +24,6 @@ function App (){
     <div>
       <h1>Simple Transactions</h1>
       <input onChange={handleSearchChange} value={search} type="text" placeholder="Search by description"/>
-      
       <TransactionForm  onSubmit={handleAddTransaction} />
       <hr/>
       <TransactionTable transactions= {filteredTransactions}/>
